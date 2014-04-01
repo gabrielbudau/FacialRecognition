@@ -38,7 +38,8 @@ public class Interface extends javax.swing.JFrame {
         initComponents();
         setLocationRelativeTo(null);
         setButtonsIcons();
-
+        
+        stepbystep_Btn.setVisible(false);
     }
 
     @SuppressWarnings("unchecked")

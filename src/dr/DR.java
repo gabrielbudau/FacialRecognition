@@ -1,5 +1,9 @@
 package dr;
 
+import java.awt.Color;
+import java.awt.color.ColorSpace;
+import javax.swing.UIManager;
+//import com.seaglasslookandfeel.SeaGlassLookAndFeel;
 /**
  *
  * @author Gabriel Budau
@@ -8,9 +12,10 @@ public class DR {
 
     public static void setLookAndFeel() {
         try {
+            
             for (javax.swing.UIManager.LookAndFeelInfo info : javax.swing.UIManager.getInstalledLookAndFeels()) {
                 if ("Nimbus".equals(info.getName())) {
-                    javax.swing.UIManager.setLookAndFeel(javax.swing.UIManager.getSystemLookAndFeelClassName());
+                   UIManager.setLookAndFeel(UIManager.getSystemLookAndFeelClassName());
                     break;
                 }
             }
